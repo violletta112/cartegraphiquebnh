@@ -84,7 +84,7 @@ with col1:
 
     # Handle wilayas selection
     choisir = st.selectbox('Choisir une wilaya', WILAYAS, key='wilaya_choice')
-
+    st.info("Veuillez sélectionner une wilaya pour calculer les taux")
     # Dictionary to hold messages for each wilaya
     messages = {
         'ALGER': """La wilaya d'Alger contient deux agences : <span style='color:red;'><strong>Bab Ezzouar</strong></span> et <span style='color:red;'><strong>El Achour</strong></span>. Vous pouvez sélectionner un fichier pour calculer les taux.""",
@@ -98,7 +98,7 @@ with col1:
 
     if choisir != 'choisir une wilaya':
         st.markdown(messages.get(choisir, ""), unsafe_allow_html=True)
-        st.markdown("Veuillez sélectionner une wilaya pour calculer les taux")
+
         # File uploader for Excel file
         uploaded_file = st.file_uploader("Choisir un fichier Excel", type=["xlsx"])
 
