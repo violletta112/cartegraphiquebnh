@@ -19,7 +19,7 @@ with col2:
     st.image("https://bnh.dz/img/logo13.png", width=100, use_column_width=True, output_format="PNG")
 
     #st.image("https://bnh.dz/img/logo13.png", width=400)
-    st.title("Déploiement des agences de BNH")
+st.title("Déploiement des agences de BNH")
 
 options = ['Choisir une année', '2024', '2025', '2026']
 optionn = ['Aucun choix', 'Avec directeur', 'Sans directeur']
