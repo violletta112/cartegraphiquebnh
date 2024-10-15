@@ -19,7 +19,7 @@ with col2:
     #st.image("https://bnh.dz/img/logo13.png", width=100, use_column_width=True, output_format="PNG")
      st.markdown(
          "<div style='text-align: center;'>"
-         "<img src='https://bnh.dz/img/logo13.png' width='500'/>"
+         "<img src='https://bnh.dz/img/logo13.png' width='900'/>"
          "</div>",
         unsafe_allow_html=True
     )
