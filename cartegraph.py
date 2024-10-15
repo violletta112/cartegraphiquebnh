@@ -16,8 +16,13 @@ col1, col2, col3 = st.columns([1, 2, 3])
 
 # Display the image in the central column
 with col2:
-    st.image("https://bnh.dz/img/logo13.png", width=100, use_column_width=True, output_format="PNG")
-
+    #st.image("https://bnh.dz/img/logo13.png", width=100, use_column_width=True, output_format="PNG")
+     st.markdown(
+         "<div style='text-align: center;'>"
+         "<img src='https://bnh.dz/img/logo13.png' width='100'/>"
+         "</div>",
+        unsafe_allow_html=True
+    )
     #st.image("https://bnh.dz/img/logo13.png", width=400)
 st.title("Déploiement des agences de BNH")
 
