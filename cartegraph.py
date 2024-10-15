@@ -98,7 +98,7 @@ with col1:
 
     if choisir != 'choisir une wilaya':
         st.markdown(messages.get(choisir, ""), unsafe_allow_html=True)
-
+        st.info("Veuillez sélectionner une wilaya pour calculer les taux")
         # File uploader for Excel file
         uploaded_file = st.file_uploader("Choisir un fichier Excel", type=["xlsx"])
 
